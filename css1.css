@@ -1,0 +1,167 @@
+html{
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vh;
+    background-color: aquamarine;
+}
+
+.outer{
+    width:300px;
+    height: 300px;
+   
+    animation: rotate 30s infinite linear;
+    margin-top: 100px;
+    margin-left: 500px;
+    
+    position: relative;
+}
+
+.outerCircle{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+}
+
+.middleCircle{
+    width: 75%;
+    height: 75%;
+    background-color: rgb(202, 161, 240);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.innerCircle{
+    position: relative;
+    width: 60%;
+    height: 60%;
+background-color: rgb(255, 183, 183);
+    border-radius: 50%;
+    animation-name: innerCircle;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+img{
+    border-radius: 50%;
+}
+
+img{
+    width: 40px;
+    height: 40px;
+}
+
+.uber{
+    position: absolute;
+    top: 2%;
+    animation: antirotateElement 15s infinite linear;
+}
+
+/* .flipkart img{
+    width: 40px;
+    height: 40px;
+} */
+
+.flipkart{
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    animation: antirotateElement 15s infinite linear;
+}
+
+.adobe{
+    position: absolute;
+    top:65%;
+    left: -2%;
+    animation: antirotateElement 15s infinite linear;
+}
+
+.linkedin{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    animation: antirotateElement 15s infinite linear;
+}
+
+.google{
+    position: absolute;
+    top: 2%;
+    left: 15%;
+    animation: rotateElement 30s infinite linear;
+}
+
+.netflix{
+    position: absolute;
+    top: 2%;
+    left: 70%;
+    
+    animation: rotateElement 30s infinite linear;
+}
+.meta{
+    position: absolute;
+    top: 50%;
+    left: -3%;
+    animation: rotateElement 30s infinite linear;
+}
+
+.microsoft{
+    position: absolute;
+    top: 50%;
+    right: -4%; 
+    animation: rotateElement 30s infinite linear;
+}
+
+.apple{
+    position: absolute;
+    top: 93%;
+    animation: rotateElement 30s infinite linear;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateElement{
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes innerCircle{
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes antirotateElement{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
